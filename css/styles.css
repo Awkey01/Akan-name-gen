@@ -1,0 +1,51 @@
+/* Core styles */
+
+* {
+    box-sizing: border-box;
+}
+body {
+    background: #92bde7;
+    color: #091522;
+    line-height: 1.5;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 1em;
+} 
+/* Classe */
+.container {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+}
+.primary {
+    color: #ff1b1b;
+    text-transform: uppercase;
+}
+ #container {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.main-header{
+    text-align: center;
+    margin-top: 20px;
+    color: #fff;
+}
+.content {
+    
+        box-shadow: 0 0 20px rgba(72, 94, 116, 0.7);
+        margin: 20px;
+        padding: 20px;
+        background: #ffff;
+   
+    }
+ 
+
+    @media (max-width:700px){
+        #container{
+            display: block;
+        }
+
+    }
