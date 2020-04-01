@@ -25,6 +25,7 @@ function showResult(e){
 function deleteResult(e){
     e.preventDefault();
 
+ 
 };
 
 
