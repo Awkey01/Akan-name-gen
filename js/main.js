@@ -1,4 +1,4 @@
-//Declaring variavle for the forms
+//Declaring variable for the Buttons
 var button = document.getElementById('myButton');
 var delButton= document.getElementById('DelButton');
 
@@ -27,6 +27,10 @@ function showResult(e){
 
 
 
+
+
+
+
 };
 
 
@@ -42,6 +46,8 @@ function showResult(e){
 
 function deleteResult(e){
     e.preventDefault();
+
+    document.getElementById("result");
 
  
 };
