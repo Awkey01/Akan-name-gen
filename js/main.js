@@ -20,7 +20,12 @@ function showResult(e){
 
 
 
-// Deleting Items function
+
+
+
+
+
+// Deleting result function
 
 function deleteResult(e){
     e.preventDefault();
