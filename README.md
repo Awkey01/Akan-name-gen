@@ -2,7 +2,8 @@
 
 A web application that takes a user's birthday and calculates the day of the week they were born and then depending on their gender outputs their Akan Name. Akan names are derived from Ghanian culture. Frequently in Ghana, children are given their first name as a 'day name' which corresponds to the day in the week they were born. 
 
-[landing-page](images/landing-page.png)
+![result-page](images/result.png)
+![error-page](images/error.png)
 
 ## Technologies Used
 
@@ -29,13 +30,10 @@ JavaScript Console
    - INPUT: "User's enter Month"
    - INPUT: "User's enter year"
    - INPUT: "User's choose a gender"
-   - OUTPUT: "Displays User's Akan Name According to Submitted Date and Gender"
+   - OUTPUT: "Displays Day of the week user was born and User's Akan Name"
 2. Displays an Error Message if Day Input Left Blank
    - INPUT: ""
-   - OUTPUT: "Displays Error Message"
-3. Displays an Error Message if Gender Not Chosen
-   - INPUT: "" 
-   - OUTPUT: "Display an Error Message" 
+   - OUTPUT: "error message"
 4. Clears Form and Reset the Message on Click
    - INPUT: "Click cancel Button" 
    - OUTPUT: "Clears  the Form"
