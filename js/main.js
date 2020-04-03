@@ -7,7 +7,7 @@ function showResult(e) {
   var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
   var male_names = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
   var female_names = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
-  var birth_date = new Date(mm + '/' + dd + '/' + yy);
+  var birth_date = new Date(dd + '/' + mm + '/' + yy);
   var day_of_the_week = birth_date.getDay();
 
   if (dd <= 0 || dd > 31) {
@@ -34,7 +34,7 @@ function showResult(e) {
   } else if ((female === false) && (male === false)) {
     alert("Please select gender!");
 
-  } else {
+  } else  {
     alert("Please fill the form");
   }
 }

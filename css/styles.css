@@ -52,6 +52,7 @@ body {
   font-size: 20px;
   text-align: center;
   margin: 20px;
+  text-transform: uppercase;
   padding: 20px;
   color: #d65906;
 }
