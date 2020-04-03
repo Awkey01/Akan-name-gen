@@ -5,10 +5,10 @@ function ShowResult() {
 	var male = document.getElementById("male").checked; 
 	var female = document.getElementById("female").checked; 
 	var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]; 
-	var maleNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"]; 
-	var femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"]; 
-	var birthDate = new Date(dd + '/' + mm + '/' + yy);
-	var dayOfTheWeek = birthDate.getDay(); //output day of the week
+	var male_names = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"]; 
+	var female_names = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"]; 
+	var birth_date = new Date(dd + '/' + mm + '/' + yy);
+	var day_of_the_Week = birth_date.getDay(); //output day of the week
 
 	if (dd <= 0 || dd > 31) { 
 		document.getElementById("error").innerText = "Oops didn't selected a valid date!"  
@@ -27,10 +27,10 @@ function ShowResult() {
 		document.getElementById("error").innerText = "Oops didn't selected a valid date!!" 
 		
 	} else if (male === true) { 
-		document.getElementById("result").innerHTML = "You were born on  " + days[dayOfTheWeek] + ".\n" + "Your Akan name is " + maleNames[dayOfTheWeek] + "!" //shows result by replacing the  HTML content in the id=result
+		document.getElementById("result").innerHTML = "You were born on  " + days[day_of_the_week] + ".\n" + "Your Akan name is " + male_names[day_of_the_Week] + "!" //shows result by replacing the  HTML content in the id=result
 	
 	} else if (female === true) { 
-		document.getElementById("result").innerHTML = "You were born on  " + days[dayOfTheWeek] + ".\n" + "Your Akan name is " + femaleNames[dayOfTheWeek] + "!" //shows result by replacing the HTML content in the id=result
+		document.getElementById("result").innerHTML = "You were born on  " + days[dayOfTheWeek] + ".\n" + "Your Akan name is " + femaleNames[day_of_the_Week] + "!" //shows result by replacing the HTML content in the id=result
 
 	} else if ((female === false) && (male === false)) { 
 		document.getElementById("error").innerText = "Please select gender!" 
