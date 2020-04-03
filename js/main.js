@@ -17,7 +17,7 @@ function showResult() {
 	} else if (mm === "------") { 
 		document.getElementById("error").innerText = "Please select a month!" 
 		
-	} else if (yy <= 0 || yy > 2020) { 
+	} else if (yy <= 0000 || yy > 2020) { 
 		document.getElementById("error").innerText = "Please enter a valid year!" 
 		
 	} else if ((mm === "February") && (dd <= 0 || dd > 29) && (0 == yy % 4)) {
