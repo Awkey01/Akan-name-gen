@@ -18,9 +18,6 @@
       <p>web application that takes a user's birthday and calculates the day of the week they were born and then depending on their gender outputs their Akan Name</p>
       <p>Akan <span class="primary">names</span> are derived from Ghanian culture. Frequently in Ghana, children are given their first name as a 'day name' which corresponds to the day in the week they were born.</p>
     </div>
-    <div id="error"> </div>
-
-    <div id="result"></div>
     <div class="content">
 
       <h6>Date of Birth*</h6>
@@ -29,7 +26,7 @@
           <div class="form-group col-xs-6">
             <label for="dd">Date:</label>
             <!--label for date input box-->
-            <input type="number" class="form-control" id="dd" placeholder="1" min="1" max="31" required>
+            <input type="number" class="form-control" id="dd" placeholder="1"  required>
           </div>
           <div class="form-group col-md-4">
             <label for="mm">Month:</label>
@@ -54,7 +51,7 @@
           </div>
           <div class="form-group col-xs-6">
             <label for="yy">Year:</label>
-            <input type="number" class="form-control" id="yy" placeholder="..." min="1" max="2020" required>
+            <input type="number" class="form-control" id="yy" placeholder="..."  required>
           </div>
         </div>
         <!-- gender section -->
@@ -63,18 +60,19 @@
           <label class="label">choose your gender?</label>
           <!--label for gender radios -->
           <div class="rdio rdio-default">
-            <input type="radio" name="gender" id="male" value="Male">
+            <input type="radio" name="gender" id="male" value="male">
             <label for="male">&nbsp;&nbsp;Male</label>
           </div>
           <div class="rdio rdio-default">
-            <input type="radio" name="gender" id="female" value="Female">
+            <input type="radio" name="gender" id="female" value="female">
             <label for="female">&nbsp;&nbsp;Female</label>
           </div>
         </div>
+    
         <!--     button section -->
         <div class="row">
           <div class="col">
-            <button type="submit"  onclick="ShowResult(); return false; "class="btn btn-info btn-md">Get Akan <span class="primary">Name</span></button>
+            <button type="submit"  onclick="showResult(); return false;" class="btn btn-info btn-md">Get Akan <span class="primary">Name</span></button>
           </div>
           <div class="col">
             <button type="cancel" class="btn btn-info btn-md">Clear the output</button>
@@ -82,6 +80,10 @@
         </div>
       </form>
     </div>
+     <!-- output -->
+     <div id="result">
+       <div id="error"></div>
+     </div>
 
   </div>
   <script src="js/main.js"></script>
