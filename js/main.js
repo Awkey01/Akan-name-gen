@@ -36,3 +36,10 @@ function showResult() {
 		
 	}
 }
+
+
+function Cancel() {
+	document.getElementById("result");
+	document.getElementById("error");
+
+}
