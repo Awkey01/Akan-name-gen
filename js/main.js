@@ -1,4 +1,4 @@
-function showResult() {
+function showResult(e) {
 	var dd = document.getElementById("dd").value; 
 	var mm = document.getElementById("mm").value; 
 	var yy = document.getElementById("yy").value; 
@@ -38,7 +38,7 @@ function showResult() {
 }
 
 
-function Cancel() {
+function Cancel(e) {
 	document.getElementById("result");
 	document.getElementById("error");
 
